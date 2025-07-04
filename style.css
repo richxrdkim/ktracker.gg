@@ -1,0 +1,243 @@
+/* === GLOBAL RESETS === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F9F8;
+  color: #8b8b8b;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.orbitron-font {
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3A7D44;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #2C5D2F;
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #2F3A2F;
+  margin-top: 0;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+}
+
+.navbar-brand {
+  color: #3A7D44 !important;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #4A4A4A !important;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #2C5D2F !important;
+}
+
+
+/* === HERO SECTION === */
+#home {
+  background-color: #ffffff;
+  padding: 120px 20px 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #033d02;
+  margin-bottom: rem;
+}
+
+#home p {
+  color: #444444;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+#home {
+  position: relative;
+  color: #031e03;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1; /* Text sits on top */
+  background-color: transparent;
+}
+
+.hero-wave {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-wave svg {
+  background-color: #E8F0E8;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 0px;
+}
+
+.hero-wave-bottom svg {
+  background-color: #E8F0E8;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 0px;
+}
+/* === FORM SECTION === */
+#projection {
+  background-color:#E8F0E8;
+  max-width: 100%;
+  border-radius: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  opacity: 100%;
+}
+
+label {
+  font-weight: 600;
+  color: #2F3A2F;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input, select {
+  background-color: #ffffff !important;
+  color: #2F3A2F !important;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #8C9A8C !important;
+  opacity: 1;
+}
+
+input:focus,
+select:focus {
+  border-color: #3A7D44 !important;
+  box-shadow: 0 0 6px rgba(58, 125, 68, 0.4);
+  outline: none;
+}
+
+/* === BUTTONS === */
+button,
+.btn {
+  background-color: #627962 !important;
+  border: none;
+  font-weight: 700;
+  font-size: .8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-success{
+  background-color: #ffffff !important;
+  border: none;
+  font-weight: 700;
+  font-size: .8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  color: #627962;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+button:hover,
+.btn:hover,
+button:focus,
+.btn:focus {
+  background-color: #2C5D2F !important;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* === RESULT DISPLAY === */
+#result {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #3A7D44;
+  text-align: center;
+}
+
+/* === CARD STYLES (Dribbble-like) === */
+.stat-card {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(58, 125, 68, 0.2);
+}
+
+/* === TABLE SECTION (legacy fallback) === */
+#stats{
+  background-color:#E8F0E8 ;
+}
+
+/* === ABOUT SECTION === */
+#about {
+  height: fit-content;
+  background-color: #FFFFFF;
+  font-size: 0.95rem;
+  border-top: 0px solid #A9C1A9;
+  padding: 0rem 0rem;
+  max-width: auto;
+  color: #000000;
+  text-align: center;
+}
+
+/* === UTILITIES === */
+.bg-gradient {
+  background: linear-gradient(135deg, #F7F9F8, #E8F0E8);
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
